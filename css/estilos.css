@@ -270,7 +270,7 @@ h2{
 }
 
 /*ir  arriba*/
-body main div h3 a{
+.arriba{
     background-color: rgb(214, 199, 199);
     font-size: small;
     margin: 3px;

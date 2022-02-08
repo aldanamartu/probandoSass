@@ -7,7 +7,6 @@ body {
     grid-template-areas: "header  header" "nav  nav" "main  main" "footer  footer"; }
 
 header {
-  background-color: #ffdaf4;
   grid-area: header;
   display: flex;
   align-items: center;
@@ -53,6 +52,18 @@ main {
       height: 250px;
       overflow: hidden;
       margin: 5px; }
+  main .arriba {
+    background-color: #d6c7c7;
+    font-size: small;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    width: 6%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #2c2929; }
 
 footer {
   grid-area: footer;
