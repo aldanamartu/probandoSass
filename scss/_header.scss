@@ -1,0 +1,20 @@
+header{
+    background-color: #ffdaf4;
+    grid-area: header;
+    display: flex;
+    align-items: center; 
+    margin: 20px; 
+    justify-content: center;
+    a{
+        margin: 10px;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    .nav-link{
+        font-size: 20px;
+        color: #232D36;
+        width: 100%;
+    }
+}

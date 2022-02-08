@@ -1,0 +1,393 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffdaf4;
+    display: grid;
+}
+
+/* grid layout*/
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header  header"
+                         "nav  nav"
+                         "main  main"
+                         "footer  footer";
+}
+
+/*estilos del header*/
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center; 
+    margin: 20px; 
+    justify-content: center;
+}
+
+header a{
+    margin: 10px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/*menu de navegacion bootstrap*/
+.nav-link{
+    font-size: 20px;
+    color: #232D36;
+    width: 100%;
+}
+
+/*main*/
+.menu{
+    width: 90%;
+    margin: 30px;
+}
+
+h1{
+    display: flex;
+    text-align: center;
+    font-size: 40px;   
+}
+
+/*menú de navegación*/
+/*nav{
+    grid-area: nav;
+    justify-self: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; 
+}
+
+nav ul li a{
+    background-color: #CBFEE3;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;  
+    text-decoration: none; 
+    color: black;  
+    font-size: large;
+    font-weight: bold; 
+    border-radius: 50px;
+}
+
+.hover:hover{
+    transform: scale(1.1);
+    
+}*/
+
+/*main*/
+main{
+    grid-area: main;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 40px;   
+}
+
+/*estilos div main*/
+.divMain {
+    display: flex;
+    align-items: center;
+}
+
+/*imagen Maia*/
+.imgMaia{   
+    margin: 50px;
+}
+
+main div p{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*estilos section main -imagenes ilustrativas*/
+.sectionMain{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.sectionMain div{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+/*.sectionMain div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+
+/*footer*/
+footer{
+    grid-area: footer;
+}
+
+footer{
+    padding : 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-top: solid 3px black;
+}
+
+.iconosRedes{
+    padding: 5px;
+    
+}
+
+h6{
+    padding: 15px;
+}
+
+/*nosotros*/
+.mainNosotros{
+   display: flex;   
+}
+
+span{
+    font-weight: bolder;
+}
+.tortaTejido{
+    width: 100%;
+    height: 70%;
+    margin: 50px;   
+}
+
+.video{
+    text-align: center;
+}
+
+/*desayunos*/
+.pDesayunos{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.iconos{
+    font-size: 30px;
+    list-style: none;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.sectionDesayunos{
+    display: flex;
+    justify-content: center;
+}
+
+.espacioIconos{
+    padding: 10px;
+}
+
+/*pasteleria*/
+.flex{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.presentacion{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titulosProductos{
+    background-color: rgb(248, 176, 224);
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.descripcionProductos{
+    text-align: start;
+}
+
+.imagenesDeMuestra{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgb(163, 39, 157);
+    margin: 5px;    
+}
+.nombresTartas{
+    text-align: start;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight:lighter;
+    
+}
+
+/*galería*/
+.mainGaleria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.mainGaleria img{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    padding: 5px;
+}  
+
+h2{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 40px;
+}
+
+/*contacto - formulario de contacto*/ 
+.mainForm{
+    padding: 90px 30px;
+    font-size: 20px;
+}
+
+/*ir  arriba*/
+body main div h3 a{
+    background-color: rgb(214, 199, 199);
+    font-size: small;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    width: 6%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: rgb(44, 41, 41);
+}
+
+/*media queries tablet*/
+@media screen and (max-width:768px){
+    /*index*/
+    /*sin imágenes ilustrativas*/
+    .sectionMain{
+        display: none;
+    }
+
+    .divMain{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .divMain div{
+        display: flex;
+        justify-content: center;
+    }
+    .imgMaia{
+        margin-bottom: 5px;
+    }
+    h1{
+        margin-left: 0px;
+    }
+
+    /*nosotros*/
+    /*sin torta tejido*/
+    .tortaTejido{
+        display: none;
+    }
+
+    /*desayunos*/
+    .iconos{
+        text-align: center;
+    }
+    /*galería*/
+    .mainGaleria img{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+/*media queries celular*/
+@media screen and (max-width:320px) and (min-width:320px){
+
+    /*index*/
+    /*sin imágenes ilustrativas*/
+    .sectionMain{
+        display: none;
+    }
+
+    .divMain{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .divMain div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .imgMaia{
+        margin-bottom: 5px;
+    }
+    h1{
+        margin-left: 0px;
+    }
+    
+    /*nosotros*/
+    /*sin torta tejido*/
+    .tortaTejido{
+        display: none;
+    }
+
+    .video{
+        display: none;
+    }
+
+    /*desayunos*/
+    .iconos{
+        text-align: center;
+    }
+     
+    /*eliminar img1 y 3*/
+    .img1{
+        display: none;
+    }
+    
+    .img3{
+        display: none;
+    }
+
+    /*redimensionar img2*/
+    .img2{
+        text-align: center;
+    }
+
+    /*pastelería*/
+    .imagenesDeMuestra{
+        display: none;
+    }
+
+    /*galería*/
+    .mainGaleria img{
+        width: 30%;
+        height: 30%;
+    }
+}
