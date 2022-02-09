@@ -1,9 +1,5 @@
 main{
     grid-area: main;
-    .menu{
-        width: 90%;
-        margin: 30px;
-    }
     .titulo{
         display: flex;
         width: 100%;
@@ -16,10 +12,12 @@ main{
         .imgMaia{   
             margin: 50px;
         }
-        div p{
-            font-size: 30px;
-            text-align: center;
-            margin: 20px;
+        div{
+            p{
+                font-size: 30px;
+                text-align: center;
+                margin: 20px;
+            }
         }
     }
     .sectionMain{
@@ -35,17 +33,21 @@ main{
             margin: 5px;
         }
     }
-    .arriba{
-        background-color: rgb(214, 199, 199);
-        font-size: small;
-        margin: 3px;
-        padding: 3px;
-        text-align: center;
-        width: 6%;
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        text-decoration: none;
-        color: rgb(44, 41, 41);
+    div {
+        h3{
+            a{
+                background-color: rgb(214, 199, 199);
+                font-size: small;
+                margin: 3px;
+                padding: 3px;
+                text-align: center;
+                width: 6%;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                text-decoration: none;
+                color: rgb(44, 41, 41);
+            }
+        }
     }
 }
