@@ -6,14 +6,18 @@ header{
     justify-content: center;
     a{
         margin: 10px;
+        .logo{
+            &:hover{
+                transform: $transform_scale;
+                transition: $transition;
+            }
+        }
     }
-    .logo:hover{
-        transform: scale(1.1);
-        transition: 1s;
-    }
+    
     .nav-link{
         font-size: 20px;
         color: #232D36;
         width: 100%;
     }
+
 }
