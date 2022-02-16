@@ -1,3 +1,11 @@
+/*mapas*/
+/*extends*/
+main div .imagenesDeMuestra {
+  border: 2px solid #a3279d;
+  padding: 10px;
+  margin: 5px; }
+
+/*mixins*/
 body {
   background-color: #ffdaf4;
   display: grid; }
@@ -34,10 +42,8 @@ main {
     align-items: center; }
     main .divMain .imgMaia {
       margin: 50px; }
-    main .divMain div p {
-      font-size: 30px;
-      text-align: center;
-      margin: 20px; }
+  main div p {
+    font-size: 35px; }
   main .sectionMain {
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +67,17 @@ main {
     bottom: 0;
     text-decoration: none;
     color: #2c2929; }
+
+/*pasteleria*/
+main div .imagenesDeMuestra {
+  width: 20%;
+  height: 20%;
+  display: flex; }
+
+main div .titulosProductos {
+  background-color: #f8b0e0;
+  border-radius: 50px;
+  margin-bottom: 50px; }
 
 footer {
   grid-area: footer;

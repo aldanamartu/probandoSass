@@ -109,6 +109,7 @@ main{
     margin: 50px;
 }
 
+/* para index.html y nosotros.html se usa _mapas.scss, falta reemplazar en el resto de los p */
 main div p{
     font-size: 30px;
     text-align: center;
@@ -215,16 +216,18 @@ span{
     font-size: 30px;
 }
 
+/* reemplazado por mixins
 .titulosProductos{
     background-color: rgb(248, 176, 224);
     border-radius: 50px;
     margin-bottom: 50px;
-}
+}*/
 
 .descripcionProductos{
     text-align: start;
 }
-
+/*
+reemplazado por extend
 .imagenesDeMuestra{
     width: 20%;
     height: 20%;
@@ -232,7 +235,7 @@ span{
     padding: 10px;
     border: 2px solid rgb(163, 39, 157);
     margin: 5px;    
-}
+}*/
 .nombresTartas{
     text-align: start;
     margin-bottom: 5px;
