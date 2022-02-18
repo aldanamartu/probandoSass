@@ -1,0 +1,177 @@
+/*media queries*/
+
+/*media queries tablet*/
+@media screen and (max-width:768px){
+    /*index*/
+    /*sin imágenes ilustrativas*/
+    main{
+        .divMain{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .imgMaia{
+            margin-bottom: 5px;
+        }
+        .sectionMain{
+            display: none;
+        }
+        .divMain div{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            margin-left: 0px;
+        }
+    }
+
+    /*nosotros*/
+    /*sin torta tejido*/
+    main{
+        .tortaTejido{
+            display: none;
+        }
+    }
+    
+    /*desayunos*/
+    main{
+        .iconos{
+            text-align: center;
+        }
+    }
+    
+    /*galería*/
+    main{
+        .fotosGaleria{
+            width: 20%;
+            height: 20%;
+        }
+    }
+    
+}
+
+/*media queries celular*/
+@media screen and (max-width:320px) and (min-width:320px){
+
+    /*index*/
+    /*sin imágenes ilustrativas*/
+    main{
+        .divMain{
+            div{
+                .imgMaia{
+                    width: 170px;
+                    margin: 5px;
+                }
+            }
+        }
+       
+        
+        div{
+            p{
+             font-size: 15px; 
+             margin: 15px;
+             text-align: justify;
+            }
+        }
+        .sectionMain{
+            display: none;
+        }
+    }
+   
+    /*nosotros*/
+    /*sin torta tejido*/
+    main{
+        div{
+            .historia{
+                margin: 10px;
+                padding: 10px;
+                font-size: 15px;
+            }
+        } 
+        .tortaTejido{
+            display: none;
+        }
+        .video{
+            display: none;
+        }
+    }
+
+    /*pastelería*/
+    main{
+        h1{
+            text-align: center;
+        }
+        .presentacion{
+            font-size: 15px;
+        }
+        div{
+            .titulosProductos{
+                font-size: 15px;
+                padding: 5px;
+                margin: 5px;
+                font-weight: bold;
+            }
+            .descripcionProductos{
+                font-size: 15px;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+        div{
+            .imagenesDeMuestra{
+                display: none;
+            }
+            .nombresTartas{
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
+    /*desayunos*/
+    main{
+        .pDesayunos{
+            font-size: 15px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .items{
+            display: none;
+        }
+        section{
+            .iconos{
+                display: none;
+            }
+        }
+    }
+
+    /*galería*/
+    main{
+        .titulo{
+            font-size: 30px;
+        }
+        .text-secondary{
+            font-size: 25px;
+            margin: 0px;
+        }
+        .fotosGaleria{
+            width: 30%;
+            height: 30%;
+        }
+        
+    }
+
+    /*footer*/
+    footer{
+        div{
+            .logo{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        h6{
+            font-size: 10px;
+        }
+    }
+}
+

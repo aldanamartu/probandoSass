@@ -161,7 +161,7 @@ h6{
 }
 
 /*nosotros*/
-.mainNosotros{
+/*.mainNosotros{
    display: flex;   
 }
 
@@ -176,7 +176,7 @@ span{
 
 .video{
     text-align: center;
-}
+}*/
 
 /*desayunos*/
 .pDesayunos{
@@ -269,6 +269,19 @@ h2{
 .mainForm{
     padding: 90px 30px;
     font-size: 20px;
+}
+
+legend{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.casilla{
+    width: 25%;
+    text-align: center;
+}
+
+.boton{
+    width: 10%;
 }
 
 /*ir  arriba*/
