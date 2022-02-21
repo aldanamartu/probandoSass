@@ -7,47 +7,63 @@ main{
         justify-content: center;
         font-size: 40px;   
     }
-    .divMain {
-        display: flex;
-        align-items: center;
+    .grilla{
+        display: grid;
+        grid-template-areas: "foto texto texto"
+                              "foto sectionMain sectionMain";
+    }
+    .foto{ 
+        grid-area: foto;
         .imgMaia{   
             margin: 50px;
+            @extend %bordes
         }
     }
-    div{
+    .texto{ 
+        grid-area: texto;
+        font-size: map-get($map:$standard , $key:font-standard );
+        margin: 25px;
+        text-align: left;  
+        align-items: center;
+        
         p{
-            font-size: map-get($map:$standard , $key:font-standard );
-            margin: 25px;
-            text-align: justify;
+           span{
+               font-weight: bold;
+           } 
+            
         }
     }
-    .sectionMain{
+    .sectionMain{ 
+        grid-area: sectionMain;
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
         justify-content: space-around;
-        margin: 0 auto;
+        align-items: center;
         div{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             overflow: hidden;
             margin: 5px;
         }
     }
     div {
-        h3{
-            a{
-                background-color: rgb(214, 199, 199);
-                font-size: small;
-                margin: 3px;
-                padding: 3px;
-                text-align: center;
-                width: 6%;
-                position: fixed;
-                right: 0;
-                bottom: 0;
-                text-decoration: none;
-                color: rgb(44, 41, 41);
+        .arriba{
+            background-color: rgb(214, 199, 199);
+            font-size: small;
+            margin: 3px;
+            padding: 3px;
+            border-radius: 5px;
+            text-align: center;
+            width: 5%;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            text-decoration: none;
+            color: rgb(44, 41, 41);
+            &:hover{
+                transform: $transform_scale;
+                transition: $transition;
             }
         }
     }
@@ -63,12 +79,16 @@ main{
             font-size: 20px;
             margin: 30px;
             padding: 30px;
-            text-align: justify;
+            text-align: left;
+            span{
+                font-weight: bold;
+            }
         }
         
        .tortaTejido{
            height: 350px;
            margin: 50px;
+           @extend %bordes
        }
     } 
     section{
@@ -82,7 +102,7 @@ main{
 main{
     .presentacion{
         margin: 30px;
-        text-align: center;
+        text-align: left;
         font-size: 30px;
     }
     .flex{
@@ -101,13 +121,16 @@ main{
             @extend %bordes
         }
         .descripcionProductos{
-            text-align: start;
+            text-align: left;
+            font-size: 25px;
+            align-self: center;
+
         }
         .nombresTartas{
             text-align: start;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        font-weight:lighter;
+            margin: 15px;
+            font-weight:lighter;
+            font-size: 25px;
         }
     }
 }
@@ -117,7 +140,7 @@ main{
     .pDesayunos{
         margin: 10px;
         padding: 20px;
-        text-align: center;
+        text-align: left;
         font-size: 25px;
     }
     .iconos{
@@ -157,32 +180,47 @@ main{
         height: 250px;
         margin: 10px;
         padding: 5px; 
+        @extend %bordes
     }
         
 }
 
 /*contacto*/
 main{
+    .mainContacto{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(248, 176, 224);
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin: 40px;
+    }
     form{
+        width: 50%;
+
         fieldset{
             padding: 30px;
         }
         .mainForm{
             padding: 90px 30px;
-            font-size: 20px;
+            font-size: 30px;
         } 
         legend{
             font-weight: bolder;
-            font-size: 25px;
+            font-size: 30px;
+        }
+        label{
+            font-size: 23px;
         }
         div{
             .casilla{
-                width: 25%;
-                text-align: center;
+                width: 35%;
+                text-align: left;
             }
         }
         .boton{
-            width: 10%;
+            width: 15%;
         }
     }
 }

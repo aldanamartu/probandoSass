@@ -6,10 +6,11 @@ footer{
     font-size: 20px;
     border-top: solid 3px black;
     div{
-        a{
-            .iconosRedes{
-                padding: 5px;
-            }
+        .iconosRedes{
+            padding: 8px;
+
+        }
+        a{ 
             .logo{
                 &:hover{
                     transform: $transform_scale;
@@ -20,6 +21,7 @@ footer{
     }
     
     h6{
-        padding: 15px;
+        padding: 5px;
+        margin: 5px;
     }
 }
