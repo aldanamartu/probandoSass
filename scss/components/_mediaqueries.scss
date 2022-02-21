@@ -51,8 +51,10 @@
             .descripcionProductos{
                 font-size: 20px;
             }
+            .nombresTartas{
+                margin-left: 42px;
+            }
         }
-        
     }
 
     /*desayunos*/
@@ -91,8 +93,7 @@
                 width: 230px;
             }
         }
-        
-        .fotosGaleria{
+        .fotosContacto{
             display: none;
         }
     }    
@@ -110,19 +111,18 @@
         }
         div{
             .foto{
+                align-self: center;
                 .imgMaia{
                     width: 170px;
                     margin: 10px;
                 }
-        }
-        
+            }
         }
         .texto{
             font-size: 15px; 
             margin: 15px;
             text-align: justify;   
-            }
-    
+        }
         .sectionMain{
             display: none;
         }
@@ -134,6 +134,7 @@
             }
         }
     }
+
     /*nosotros*/
     /*sin torta tejido*/
     main{
@@ -213,12 +214,10 @@
             font-size: 25px;
             margin: 0px;
         }
-        .mainGaleria{
-            .fotosGaleria{
-                width: 30%;
-                height: 30%;
-            }
-        }    
+        .fotosGaleria{
+            width: 96px;
+            height: 96px;
+        }
     }
 
     /*contacto*/
@@ -251,10 +250,9 @@
                     margin: 5px;
                     padding: 5px;
                 }
-           
             }
         }
-       .fotosGaleria{
+       .fotosContacto{
            display: none;
        } 
     }

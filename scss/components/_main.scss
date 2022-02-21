@@ -25,12 +25,10 @@ main{
         margin: 25px;
         text-align: left;  
         align-items: center;
-        
         p{
            span{
                font-weight: bold;
            } 
-            
         }
     }
     .sectionMain{ 
@@ -103,7 +101,7 @@ main{
     .presentacion{
         margin: 30px;
         text-align: left;
-        font-size: 30px;
+        font-size: 25px;
     }
     .flex{
         display: flex;
@@ -131,6 +129,8 @@ main{
             margin: 15px;
             font-weight:lighter;
             font-size: 25px;
+            font-weight: 400;
+            margin-left: 80px;
         }
     }
 }
@@ -159,7 +159,6 @@ main{
         display: flex;
         justify-content: center;
     }   
-
 }
 
 /*galeria*/
@@ -168,7 +167,7 @@ main{
         text-align: center;
         padding: 20px;
         margin: 20px;
-       font-size: 40px;
+        font-size: 32px;
     }
     .mainGaleria{
         display: flex;
@@ -182,7 +181,6 @@ main{
         padding: 5px; 
         @extend %bordes
     }
-        
 }
 
 /*contacto*/
@@ -198,7 +196,6 @@ main{
     }
     form{
         width: 50%;
-
         fieldset{
             padding: 30px;
         }

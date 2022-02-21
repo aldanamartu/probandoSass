@@ -106,7 +106,7 @@ main section .video {
 main .presentacion {
   margin: 30px;
   text-align: left;
-  font-size: 30px; }
+  font-size: 25px; }
 
 main .flex {
   display: flex;
@@ -134,7 +134,9 @@ main div .nombresTartas {
   text-align: start;
   margin: 15px;
   font-weight: lighter;
-  font-size: 25px; }
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 80px; }
 
 /*desayunos*/
 main .pDesayunos {
@@ -164,7 +166,7 @@ main h2 {
   text-align: center;
   padding: 20px;
   margin: 20px;
-  font-size: 40px; }
+  font-size: 32px; }
 
 main .mainGaleria {
   display: flex;
@@ -253,6 +255,8 @@ footer {
     font-weight: 500; }
   main div .descripcionProductos {
     font-size: 20px; }
+  main div .nombresTartas {
+    margin-left: 42px; }
   /*desayunos*/
   main .pDesayunos {
     font-size: 20px;
@@ -272,7 +276,7 @@ footer {
     padding: 5px; }
   main .mainForm .casilla {
     width: 230px; }
-  main .fotosGaleria {
+  main .fotosContacto {
     display: none; } }
 
 /*media queries celular*/
@@ -282,9 +286,11 @@ footer {
   main .grilla {
     display: flex;
     flex-direction: column; }
-  main div .foto .imgMaia {
-    width: 170px;
-    margin: 10px; }
+  main div .foto {
+    align-self: center; }
+    main div .foto .imgMaia {
+      width: 170px;
+      margin: 10px; }
   main .texto {
     font-size: 15px;
     margin: 15px;
@@ -342,9 +348,9 @@ footer {
   main .text-secondary {
     font-size: 25px;
     margin: 0px; }
-  main .mainGaleria .fotosGaleria {
-    width: 30%;
-    height: 30%; }
+  main .fotosGaleria {
+    width: 96px;
+    height: 96px; }
   /*contacto*/
   main .mainContacto {
     margin: 5px; }
@@ -367,7 +373,7 @@ footer {
         width: 80px;
         margin: 5px;
         padding: 5px; }
-  main .fotosGaleria {
+  main .fotosContacto {
     display: none; }
   /*footer*/
   footer {
