@@ -50,17 +50,19 @@ main {
     grid-area: texto;
     font-size: 25px;
     margin: 25px;
-    text-align: left;
-    align-items: center; }
-    main .texto p span {
-      font-weight: bold; }
+    padding: 25px; }
+    main .texto p {
+      margin: 25px; }
+      main .texto p span {
+        font-weight: bold; }
   main .sectionMain {
     grid-area: sectionMain;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 25px; }
     main .sectionMain div {
       width: 200px;
       height: 200px;
@@ -73,7 +75,7 @@ main {
     padding: 3px;
     border-radius: 5px;
     text-align: center;
-    width: 5%;
+    width: 60px;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -226,6 +228,13 @@ footer {
 /*media queries*/
 /*media queries tablet*/
 @media screen and (max-width: 768px) {
+  /*logo*/
+  header .logo {
+    width: 90px;
+    height: 90px; }
+  header .nav-link {
+    margin: 0%;
+    padding: 0%; }
   /*index*/
   /*sin imágenes ilustrativas*/
   main .divMain {
@@ -240,6 +249,9 @@ footer {
     justify-content: center; }
   main h1 {
     margin-left: 0px; }
+  main .texto {
+    padding: 0%;
+    margin-right: 0%; }
   /*nosotros*/
   /*sin torta tejido*/
   main div .historia {
@@ -259,9 +271,11 @@ footer {
     margin-left: 42px; }
   /*desayunos*/
   main .pDesayunos {
+    text-align: left;
     font-size: 20px;
     padding: 5px;
-    margin: 5px; }
+    margin-left: 5%;
+    margin-right: 5%; }
   main section .iconos {
     font-size: 20px; }
   /*galería*/
@@ -280,7 +294,14 @@ footer {
     display: none; } }
 
 /*media queries celular*/
-@media screen and (max-width: 320px) and (min-width: 320px) {
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  /*logo*/
+  header .logo {
+    width: 90px;
+    height: 90px; }
+  header .nav-link {
+    margin: 0%;
+    padding: 0%; }
   /*index*/
   /*sin imágenes ilustrativas*/
   main .grilla {
@@ -337,7 +358,7 @@ footer {
     font-size: 15px;
     padding: 5px;
     margin: 5px;
-    text-align: center; }
+    text-align: left; }
   main .items {
     display: none; }
   main section .iconos {

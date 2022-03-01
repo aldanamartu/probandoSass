@@ -23,21 +23,22 @@ main{
         grid-area: texto;
         font-size: map-get($map:$standard , $key:font-standard );
         margin: 25px;
-        text-align: left;  
-        align-items: center;
+        padding: 25px;
         p{
-           span{
-               font-weight: bold;
-           } 
+            margin: 25px;
+            span{
+                font-weight: bold;
+            }
         }
     }
     .sectionMain{ 
         grid-area: sectionMain;
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
         justify-content: space-around;
         align-items: center;
+        padding: 20px;
+        margin-bottom: 25px;
         div{
             width: 200px;
             height: 200px;
@@ -53,7 +54,7 @@ main{
             padding: 3px;
             border-radius: 5px;
             text-align: center;
-            width: 5%;
+            width: 60px;
             position: fixed;
             right: 0;
             bottom: 0;
