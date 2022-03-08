@@ -202,12 +202,14 @@ main form {
     font-weight: bolder;
     font-size: 30px; }
   main form label {
-    font-size: 23px; }
+    font-size: 23px;
+    margin: 20px; }
   main form div .casilla {
     width: 35%;
     text-align: left; }
   main form .boton {
-    width: 15%; }
+    width: 15%;
+    margin: 10px; }
 
 footer {
   grid-area: footer;
@@ -390,10 +392,11 @@ footer {
       main .mainContacto .mainForm div .casilla {
         width: 80%;
         text-align: center; }
+      main .mainContacto .mainForm .items {
+        margin-bottom: 0px; }
       main .mainContacto .mainForm .boton {
         width: 80px;
-        margin: 5px;
-        padding: 5px; }
+        margin: 10px; }
   main .fotosContacto {
     display: none; }
   /*footer*/
